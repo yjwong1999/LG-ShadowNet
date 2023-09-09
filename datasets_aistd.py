@@ -14,7 +14,7 @@ class ImageDataset(Dataset):
         self.unaligned = unaligned
 
         self.files_A = sorted(glob.glob(os.path.join(root, '%s/train_A' % mode) + '/*.*'))
-        self.files_B = sorted(glob.glob(os.path.join(root, '%s/train_C_fixed_official' % mode) + '/*.*'))
+        self.files_B = sorted(glob.glob(os.path.join(root, '%s/train_C_fixed_ours' % mode) + '/*.*'))
 
     def __getitem__(self, index):
         i = random.randint(0, 48)
