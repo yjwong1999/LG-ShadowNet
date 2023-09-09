@@ -15,7 +15,7 @@ from model_lgsn import Generator_F2S,Generator_S2F,Discriminator
 from datasets_aistd import ImageDataset
 import numpy as np
 from utils import weights_init_normal
-os.environ["CUDA_VISIBLE_DEVICES"]="4,5,1,2,3,0,6,7"
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 from skimage import io, color
 from skimage.transform import resize
