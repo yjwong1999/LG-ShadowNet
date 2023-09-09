@@ -18,6 +18,7 @@ import scipy.io as io
 os.environ["CUDA_VISIBLE_DEVICES"]="4"
 
 parser = argparse.ArgumentParser()
+parser.add_argument('--dataroot', type = str, required = True, default='', help="where is the root directory for the data")
 parser.add_argument('--epoch', type=int, default=0, help='starting epoch')
 parser.add_argument('--n_epochs', type=int, default=200, help='number of epochs of training')
 parser.add_argument('--batchSize', type=int, default=1, help='size of the batches')
@@ -38,7 +39,7 @@ opt = parser.parse_args()
 # SRD
 #opt.dataroot = '/home/liuzhihao/dataset/SRD'
 # ISTD
-opt.dataroot = '/home/liuzhihao/dataset/ISTD'
+#opt.dataroot = '/home/liuzhihao/dataset/ISTD'
 
 if not os.path.exists('model_istda_lgsn_module1'):
     os.mkdir('model_istda_lgsn_module1')
