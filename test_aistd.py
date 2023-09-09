@@ -7,7 +7,7 @@ from skimage import io, color
 from skimage.transform import resize
 
 from model_lgsn import Generator_S2F
-os.environ["CUDA_VISIBLE_DEVICES"]="4,2,6,1,7,5,3,0"
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--cuda', action='store_true', help='use GPU computation')
