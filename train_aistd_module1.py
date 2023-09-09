@@ -15,7 +15,7 @@ from model_module1 import Generator_F2S,Generator_S2F,Discriminator
 from datasets_aistd_l import ImageDataset
 import numpy as np
 import scipy.io as io
-os.environ["CUDA_VISIBLE_DEVICES"]="4"
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--dataroot', type = str, required = True, default='', help="where is the root directory for the data")
