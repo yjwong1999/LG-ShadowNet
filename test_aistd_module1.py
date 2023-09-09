@@ -9,7 +9,7 @@ from skimage import io, color
 from skimage.transform import resize
 
 from model_module1 import Generator_S2F
-os.environ["CUDA_VISIBLE_DEVICES"]="4,5,3,1,2,7,0,6"
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--input_nc', type=int, default=1, help='number of channels of input data')
