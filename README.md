@@ -1,6 +1,9 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1NnFUTziGJaYjxo3BfZl2ltDK5kw3BZyJ?usp=sharing)
 
 # LG-ShadowNet
+Currently, this repo is just a fork from the work below. </br>
+I only added the Colab implementation, to simplify the workflow for interested readers with limited compute platform. </br>
+
 [Shadow Removal by a Lightness-Guided Network with Training on Unpaired Data.](https://ieeexplore.ieee.org/document/9318562)
 
 ```
